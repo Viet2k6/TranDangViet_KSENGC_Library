@@ -100,7 +100,8 @@ void displayBooks(struct Book books[], int count) {
 	do {
 		scanf(" %c", &choice);
 		if (choice == '9'){
-		clearScreen();  
+		clearScreen(); 
+		printf("***Library Management System Using C***\n");
 		return;
 		}else if (choice == '0') {
 			printf("\n========= Thank you =========\n");
@@ -122,7 +123,8 @@ void searchBook(const struct Book books[], int count) {
 		do {
 			scanf(" %c", &choice);
 			if (choice == '9'){ 
-			clearScreen();  
+			clearScreen(); 
+			printf("***Library Management System Using C***\n");
 			return;
 			}else if (choice == '0') {
 				printf("\n========= Thank you =========\n");
@@ -162,7 +164,8 @@ void searchBook(const struct Book books[], int count) {
 	do {
 		scanf(" %c", &choice);
 		if (choice == '9'){
-		clearScreen();  
+		clearScreen(); 
+		printf("***Library Management System Using C***\n"); 
 		return;
 		}else if (choice == '0') {
 			printf("\n========= Thank you =========\n");
@@ -184,7 +187,8 @@ void addBook(struct Book books[], int* count) {
         do {
             scanf(" %c", &choice);
             if (choice == '9'){ 
-            clearScreen();  
+            clearScreen();
+			printf("***Library Management System Using C***\n");  
 			return;
             }else if (choice == '0') {
                 printf("\n========= Thank you =========\n");
@@ -271,7 +275,8 @@ void addBook(struct Book books[], int* count) {
     do {
         scanf(" %c", &choice);
         if (choice == '9'){ 
-        clearScreen();  
+        clearScreen();
+		printf("***Library Management System Using C***\n"); 
 		return; 
         }else if (choice == '0') {
             printf("\n========= Thank you =========\n");
@@ -291,7 +296,8 @@ void editBook(struct Book books[], int count) {
         do {
             scanf(" %c", &choice);
             if (choice == '9'){ 
-            clearScreen();  
+            clearScreen();
+			printf("***Library Management System Using C***\n"); 
             return;
             }else if (choice == '0') {
                 printf("\n========= Thank you =========\n");
@@ -358,7 +364,8 @@ void editBook(struct Book books[], int count) {
             do {
                 scanf(" %c", &choice);
                 if (choice == '9'){ 
-                clearScreen();  
+                clearScreen();
+				printf("***Library Management System Using C***\n"); 
                 return; 
                 }else if (choice == '0') {
                     printf("\n========= Thank you =========\n");
@@ -385,7 +392,7 @@ void deleteBook(struct Book books[], int* count) {
 			scanf(" %c", &choice);
 			if (choice == '9'){ 
 			clearScreen();  
-            displayMenu();
+            printf("***Library Management System Using C***\n");
             return;
 			}else if (choice == '0') {
 				printf("\n========= Thank you =========\n");
@@ -419,7 +426,8 @@ void deleteBook(struct Book books[], int* count) {
 	do {
 		scanf(" %c", &choice);
 		if (choice == '9'){ 
-		clearScreen();  
+		clearScreen();
+		printf("***Library Management System Using C***\n");  
 		return; 
 		}else if (choice == '0') {
 			printf("\n========= Thank you =========\n");
@@ -440,9 +448,11 @@ void sortBooksByPrice(struct Book books[], int count) {
 		char choice;
 		do {
 			scanf(" %c", &choice);
-			if (choice == '9') 
+			if (choice == '9'){
+			clearScreen();
+		    printf("***Library Management System Using C***\n"); 
 			return;
-			else if (choice == '0') {
+			}else if (choice == '0') {
 				printf("\n========= Thank you =========\n");
 				printf("======== See you soon =======\n");
 				exit(0); 
@@ -491,7 +501,8 @@ void sortBooksByPrice(struct Book books[], int count) {
 		do {
 			scanf(" %c", &choice);
 			if (choice == '9'){
-			clearScreen();  
+			clearScreen();
+		    printf("***Library Management System Using C***\n"); 
 			return;
 			}else if (choice == '0') {
 				printf("\n========= Thank you =========\n");
